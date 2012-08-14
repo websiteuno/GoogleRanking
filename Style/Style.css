@@ -1,0 +1,362 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	width: 800px;
+	margin: auto; /* Pour centrer notre page */
+	margin-top: 20px; /* Pour éviter de coller avec le haut de la fenêtre du navigateur. Essayez d'enlever pour voir ! */
+	margin-bottom: 20px;    /* Idem pour le bas du navigateur */
+	background-image: url("images/fond.png"); /* Une petite image de fond pour éviter d'avoir un vieux fond blanc :p */
+}
+p {
+	font-family: "Times New Roman", Times, serif;
+	color: #FFFFFF;
+	text-indent: 10px;
+	text-align:left;
+}
+select {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	width: 160px;
+	color: #000066;
+	background-color:#CCCCCC;
+}
+#en_tete {
+	width: 800px;
+	height: 106px;
+	background-image: url("images/banniere.png");
+	background-repeat: no-repeat;
+}
+#menu_global {
+	background-position:bottom;
+	background-color: #626262;
+	background-image: url("images/motif.png");
+	background-repeat: repeat-x;
+	border: 2px solid black;
+    margin=0px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-bottom:5px;
+	height:35px;
+	background-position:0px 35px;
+}
+/* Le menu */
+
+
+#menu_contextuel {
+	float: left; /* Le menu flottera à gauche */
+	width: 150px; /* Très important : donner une taille au menu */
+}
+.element_menu {
+	background-color: #626262;
+	background-image: url("images/motif.png");
+	background-repeat: repeat-x;
+	border: 2px solid black;
+	padding-bottom:15px;
+	margin-bottom: 10px; /* Pour éviter que les éléments du menu ne soient trop collés */
+}
+/* Quelques effets sur les menus */
+
+
+.element_menu h4 /* Tous les titres de menus */ {
+	color: #FFFF00;
+	font-family: Arial, "Arial Black", "Times New Roman", Times, serif;
+	text-align: center;
+}
+.element_menu ul /* Toutes les listes à puces se trouvant dans un menu */ {
+	list-style-image: url("images/puce.png"); /* On change l'apparence des puces */
+	padding: 0px; /* Tous les côtés ont une marge intérieure de 0 pixels */
+	padding-left: 15px; /* ... mais on modifie ensuite la marge de gauche, donc celle-là fera finalement 20 pixels */
+	margin: 0px; /* Idem pour margin, ça nous évite d'avoir à en écrire 4 (margin-left, margin-right...) */
+	margin-bottom: 10px; /* Même chose que tout à l'heure, on modifie ensuite juste margin-bottom, mais tous les autres sont à 0px */
+}
+.element_menu li {
+	margin:0px;
+	margin-bottom:5px;
+}
+.element_menu a /* Tous les liens se trouvant dans un menu */ {
+	color: #B3B3B3;
+	font-weight:bold;
+}
+.element_menu a:hover /* Quand on pointe sur un lien du menu */ {
+	background-color: #B3B3B3;
+	color: black;
+}
+/* Le corps de la page */
+
+#corps {
+	margin-left: 170px; /* Une marge à gauche pour pousser le corps, afin qu'il ne passe plus sous le menu */
+	margin-bottom: 20px; /* Ca c'est pour éviter que le corps colle trop au pied de page en-dessous */
+	padding: 5px; /* Pour éviter que le texte à l'intérieur du corps ne colle trop à la bordure */
+	color: #B3B3B3;
+	background-color: #626262; /* Une couleur de fond pour le corps */
+	background-image: url("images/motif.png");
+	background-repeat: repeat-x; /* Une petite image de fond qui se répètera horizontalement en haut */
+	border: 2px solid black; /* Une bordure pour bien marquer les limites du corps et pour faire joli */
+}
+#corps h1 /* Tous les titres h1 du corps */ {
+	color: #FFFF00;
+	text-align: center;
+	font-family: Arial, "Arial Black", "Times New Roman", Times, serif;
+}
+#corps h2 /* Tous les titres h2 du corps */ {
+	height: 30px;
+	background-image: url("images/titre.png"); /* Une petite image de fond sur les titres h2 */
+	background-repeat: no-repeat; /* L'image ne se répètera pas, elle sera à gauche du titre */
+	padding-left: 30px;
+	color: #B3B3B3;
+	text-align: left;
+}
+#pied_de_page {
+	padding: 5px;
+	text-align: center;
+	color: #B3B3B3;
+	background-color: #626262;
+	background-image: url("images/motif.png");
+	background-repeat: repeat-x;
+	border: 2px solid black;
+	clear: both;
+	padding: 10px;
+	padding-bottom: 0px;
+	text-align: center;
+	margin-top: 10px;
+}
+.table_menu {
+	text-align:left;
+	border-collapse: collapse; /* Colle les bordures entre elles */
+	width:795px;
+}
+.table_1 {
+	margin: auto; /* Centre le tableau */
+	border-collapse: collapse; /* Colle les bordures entre elles */
+}
+caption {
+	margin: auto;
+	font-family: Arial, Times, "Times New Roman", serif;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #009900;
+	margin-top: 20px; /* La marge doit se faire au-dessus et non en-dessous maintenant */
+}
+td {
+	vertical-align: bottom; /* Alignement vertical, le contenu des cellules sera placé en bas */
+	font-family: "Comic Sans MS", "Trebuchet MS", Times, "Times New Roman", serif;
+	text-align: center;
+	padding: 5px;
+	vertical-align:middle;
+	margin: 60px;
+}
+a {
+	color: #B3B3B3;
+}
+a:hover /* Quand on pointe sur un lien du menu */ {
+	background-color: #B3B3B3;
+	color: black;
+}
+textarea {
+	font-family: Georgia, "Times New Roman", Times, serif; /* On modifie la police du texte tapé l'intérieur des champs */
+	width:160px;
+	background-color:#CCCCCC;
+	color: #000066;
+}
+input {
+	color: #000066;
+	background-color:#CCCCCC;
+	font-family: Georgia, "Times New Roman", Times, serif; /* On modifie la police du texte tapé l'intérieur des champs */
+}
+input:focus, textarea:focus /* Quand le curseur est sur un champ (ne marche pas sur IE) */ {
+	background-color: #FFFF99;
+}
+label {
+	color: #333333; /* Colorer en bleu tous les labels (bah oui, pourquoi pas en bleu ?) */
+}
+legend /* On met un peu plus en valeur les titres des fieldset */ {
+	font-family: Arial, "Arial Black", Georgia, "Times New Roman", Times, serif;
+	color: #FFFF00;
+	font-weight: bold;
+}
+fieldset {
+	margin-bottom: 15px; /* Une marge pour séparer les fieldset */
+	background-color: #999999;
+	color: #CCCCCC;
+}
+.td_1 {
+	width: 180px;
+}
+.td_3 {
+	width: 100%;
+}
+.td_2 {
+	width: 180px;
+	border: 1px solid #FFFFFF; /* Bordure du tableau avec effet 3D (outset) */
+	border-collapse: collapse; /* Colle les bordures entre elles */
+}
+.td_6 {
+	width: 220px;
+	border: 1px solid #000000; /* Bordure du tableau avec effet 3D (outset) */
+	border-collapse: collapse; /* Colle les bordures entre elles */
+	font-size: 14px;
+}
+th /* Les cellules d'en-tête */ {
+	color: #FFFF00;
+	font-family: Arial, "Arial Black", Times, "Times New Roman", serif;
+	border: 1px solid #FFFFFF; /* Bordure du tableau avec effet 3D (outset) */
+	border-collapse: collapse; /* Colle les bordures entre elles */
+}
+form, .pages {
+	text-align:center;
+}
+.news p {
+	background-color:#CCCCCC;
+	margin-top:0px;
+}
+.news {
+	width:70%;
+	margin:auto;
+}
+.a1 {
+	color: #FFFF33;
+	font-weight:bold;
+	text-decoration: underline;
+}
+.a1:hover {
+	background-color: #333333;
+	color: #FFCC00;
+	cursor:pointer;
+}
+.a3 {
+	color: #CCCCCC;
+	font-weight:bold;
+}
+.a3:hover {
+	background-color: #CCCCCC;
+	color: #FFFFFF;
+	cursor:pointer;
+}
+.message_erreur, .message_validation /* Tous les messages */ {
+	background-color:white;
+	border: 1px solid black;
+	padding: 8px;
+	padding-left: 40px;
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	width: 400px;
+	height: 150px;
+	margin-top: -75px;
+	margin-left: -200px;
+}
+.message_erreur {
+	background-image: url('images/erreur.png');
+	color: red;
+}
+.message_validation {
+	background-image: url('valider.png');
+	color: green;
+}
+.message_erreur, .message_validation  /* Tous les messages */ {
+	background-color:white;
+	border: 1px solid black;
+	padding: 8px;
+	padding-left: 40px;
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	width: 400px;
+	height: 150px;
+	margin-top: -75px;
+	margin-left: -200px;
+}
+#pas_attendre {
+	font-style: italic;
+	width:100%;
+	text-align: center;
+}
+.label {
+	color:#CCCCCC;
+}
+label {
+	color:#333333;
+	font-family: "Comic Sans MS", "Trebuchet MS", Times, "Times New Roman", serif;
+}
+.select_1 {
+	width:250px;
+}
+.a2 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFF33;
+	text-decoration: underline;
+}
+.a2:hover {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color:#666666;
+	background-color: #FFFF33;
+}
+#pied_de_page p {
+	text-align:center;
+}
+.livreor {
+	text-align:center;
+}
+.td_4 {
+	width:100px;
+	border-right:medium #000000 double;
+	border-left:medium #000000 double;
+}
+.table_resultat {
+	margin: auto; /* Centre le tableau */
+	color:#000000;
+	border: 1px solid #000000; /* Bordure du tableau avec effet 3D (outset) */
+	border-collapse: collapse; /* Colle les bordures entre elles */
+}
+.plus {
+	background-image: url(images/plus.gif);
+	background-repeat:no-repeat;
+    border: 1px solid #FFFFFF; /* Bordure du tableau avec effet 3D (outset) */
+	border-collapse: collapse; /* Colle les bordures entre elles */
+	height: 30px;
+	width: 30px;
+}
+.moins {
+	background-image: url(images/moins.gif);
+	background-repeat:no-repeat;
+ 	border: 1px solid #FFFFFF; /* Bordure du tableau avec effet 3D (outset) */
+ 	border-collapse: collapse; /* Colle les bordures entre elles */
+	height: 30px;
+	width: 30px;
+}
+.egal {
+	background-image: url(images/egal.gif);
+	background-repeat:no-repeat;
+ 	border: 1px solid #FFFFFF; /* Bordure du tableau avec effet 3D (outset) */
+ 	border-collapse: collapse; /* Colle les bordures entre elles */
+	height: 30px;
+	width: 30px;
+}
+.inexistant {
+	background-image: url(images/inexistant.png);
+	background-repeat:no-repeat;
+ 	border: 1px solid #FFFFFF; /* Bordure du tableau avec effet 3D (outset) */
+ 	border-collapse: collapse; /* Colle les bordures entre elles */
+	height: 30px;
+	width: 30px;
+}
+.td_10 {
+	border: 1px solid #FFFFFF; /* Bordure du tableau avec effet 3D (outset) */
+	border-collapse: collapse; /* Colle les bordures entre elles */
+	height: 30px;
+	width: 30px;
+}
+.td_11 {
+	border: 1px solid #FFFFFF; /* Bordure du tableau avec effet 3D (outset) */
+	border-collapse: collapse; /* Colle les bordures entre elles */
+	height: 30px;
+	width: 100px;
+}
